@@ -433,6 +433,7 @@ p {
 .form__item__label input {
 	padding: 15px 10px;
 	width: 100%;
+	min-width:200px;
 	height: 45px;
 	outline: transparent;
 	border-radius: 5px;
