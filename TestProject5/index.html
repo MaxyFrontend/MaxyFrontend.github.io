@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normolize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Slider</title>
+</head>
+<body>
+	<header class="header" id="home">
+		<div class="header__top">
+			<div class="header__top__container">
+				<img src="images/logo.png" alt="" class="header__logo">
+				<div class="header__top__nav_wrapper">
+					<nav class="nav">
+						<ul class="nav__items_inner">
+							<li class="nav__items">
+								<a href="#home">Home</a>
+							</li>
+							<li class="nav__items">
+								<a href="#destinations">Destinations</a>
+							</li>
+							<li class="nav__items">
+								<a href="#specials">Specials</a>
+							</li>
+							<li class="nav__items">
+								<a href="#holidays">Holidays</a>
+							</li>
+							<li class="nav__items">
+								<a href="#clients">Clients</a>
+							</li>
+							<li class="nav__items">
+								<a href="#blog">Blog</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="nav-button" id="nav-button">
+						<div class="nav-button__lines"></div>
+						<div class="nav-button__lines"></div>
+						<div class="nav-button__lines"></div>
+					</div>
+					<div type="text" class="search">
+						<img src="images/search-icon.png" alt="" class="search-icon">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="banner__text" id="destinations">
+				<h1 class="banner__text_title">
+					To travel is to live
+				</h1>
+				<p class="banner__text_sub-title">
+					You Don't Need Magic to Disappear. All you need is a destination.
+				</p>
+				<div class="banner__text__buttons-block">
+					<a href="#" class="banner__text__buttons show-map">Show on the map</a>
+					<a href="#" class="banner__text__buttons more-info">More info</a>
+				</div>
+			</div>
+			<div class="slider">
+				<div class="slider__item">
+					<img class="slider__item__image"src="images/banner-image.jpg">
+				</div>
+				<div class="slider__item">
+					<img class="slider__item__image" src="images/banner-image-2.jpg">
+				</div>
+				<div class="slider__item">
+					<img class="slider__item__image" src="images/banner-image-3.jpg">
+				</div>
+				<div class="slider__item">
+					<img class="slider__item__image" src="images/banner-image-4-copy.jpg">
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="search_section">
+		<div class="search__wrapper">
+			<div class="search__wrapper__title_block">
+				<h2>FIND YOUR <span>HOLYDAYS</span></h2>
+				<img src="images/border-image.png" alt="" class="border-image">
+			</div>
+			<form action="" class="search__wrapper__form">
+				<div class="search__form__item">
+					<span>Where</span>
+					<label class="form__item__label" for="">
+						<input type="text" placeholder="Destination">
+						<img src="images/planet-icon.png" alt="">
+					</label>
+				</div>
+				<div class="search__form__item">
+					<span>When</span>
+					<label class="form__item__label" for="">
+						<input type="text" placeholder="Select date" onfocus="(this.type='date', this.value='2020-01-01')" onblur="(this.type='text')" >
+						<img src="images/calendar-icon.png" alt="">
+					</label>
+				</div>
+				<button type="submit" class="search__form__button">
+					Search
+				</button>
+			</form>
+		</div>
+	</section>
+	<section class="offers_section" id="specials">
+		<h2 class="offers_section__title">
+			Special Offers
+		</h2>
+		<p class="offers_section__sub-title">
+			Best 2014 packages where people love to stay!
+		</p>
+		<div class="slider">
+			<div class="slider__item">
+				<img class="slider__item__image" src="images/USA-image.jpg">
+				<div class="slider__item__description">
+					<div class ="slider__item__description__items_wrapper">
+					<h4 class="slider__item__description__title">
+					statue of liberty - USA
+				</h4>
+					<span>
+						New Destination!
+					</span>
+				</div>
+					<div class="arrow-down"></div>
+				</div>
+				<div class="slider__item__description_items_block">
+					<div class="slider__item__description_items_block__content">
+					<p class="slider__item__description_item">
+						<img src="images/umbrella-icon.png" class="slider__item__description_item__image"></img>
+						<span>17°c Rainy</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/price-icon.png" class="slider__item__description_item__image"></img>
+						<span>$1999*</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/sign-icon.png" class="slider__item__description_item__image"></img>
+						<span>8days/7nights</span>
+					</p>
+				</div>
+					<p>Expires in : 1 day</p>
+				</div>
+			</div>
+			<div class="slider__item">
+				<img class="slider__item__image" src="images/Seychelles-image.jpg">
+				<div class="slider__item__description">
+					<div class ="slider__item__description__items_wrapper">
+					<h4 class="slider__item__description__title">
+						Spectacular Seychelles
+					</h4>
+					<span>
+						New Destination!
+					</span>
+				</div>
+					<div class="arrow-down"></div>
+				</div>
+				<div class="slider__item__description_items_block">
+					<div class="slider__item__description_items_block__content">
+					<p class="slider__item__description_item">
+						<img src="images/umbrella-icon.png" class="slider__item__description_item__image"></img>
+						<span>30°c Sunny</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/price-icon.png" class="slider__item__description_item__image"></img>
+						<span>$999*</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/sign-icon.png" class="slider__item__description_item__image"></img>
+						<span>5days/4nights</span>
+					</p>
+				</div>
+					<p>Expires in : 2 days</p>
+				</div>
+			</div>
+			<div class="slider__item">
+				<img class="slider__item__image" src="images/Hong-Kong-image.jpg">
+				<div class="slider__item__description">
+					<div class ="slider__item__description__items_wrapper">
+					<h4 class="slider__item__description__title">
+						Hong Kong & Macau
+					</h4>
+					<span>
+						Bonus Extras!
+					</span>
+				</div>
+					<div class="arrow-down"></div>
+				</div>
+				<div class="slider__item__description_items_block">
+					<div class="slider__item__description_items_block__content">
+					<p class="slider__item__description_item">
+						<img src="images/umbrella-icon.png" class="slider__item__description_item__image"></img>
+						<span>22°c Cloudy</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/price-icon.png" class="slider__item__description_item__image"></img>
+						<span>$1675*</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/sign-icon.png" class="slider__item__description_item__image"></img>
+						<span>8days/7nights</span>
+					</p>
+				</div>
+					<p>Expires in : 6 days</p>
+				</div>
+				</div>
+			<div class="slider__item">
+				<img class="slider__item__image" src="images/Paris-image.jpg">
+				<div class="slider__item__description">
+					<div class ="slider__item__description__items_wrapper">
+					<h4 class="slider__item__description__title">
+					Paris Highlights
+					</h4>
+					<span>New Destination!</span>
+
+				</div>
+					<div class="arrow-down"></div>
+				</div>
+				<div class="slider__item__description_items_block">
+					<div class="slider__item__description_items_block__content">
+					<p class="slider__item__description_item">
+						<img src="images/umbrella-icon.png" class="slider__item__description_item__image"></img>
+						<span>10°c Rainy</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/price-icon.png" class="slider__item__description_item__image"></img>
+						<span>$1000*</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/sign-icon.png" class="slider__item__description_item__image"></img>
+						<span>14days/13nights</span>
+					</p>
+				</div>
+					<p>Expires in : 3 days</p>
+				</div>
+			</div>
+			<div class="slider__item">
+				<img class="slider__item__image" src="images/seychelles-mountain-image.jpg">
+				<div class="slider__item__description">
+					<div class ="slider__item__description__items_wrapper">
+					<h4 class="slider__item__description__title">Spectacular Seychelles</h4>
+					<span>New Destination!</span>
+				</div>
+					<div class="arrow-down"></div>
+				</div>
+				<div class="slider__item__description_items_block">
+					<div class="slider__item__description_items_block__content">
+					<p class="slider__item__description_item">
+						<img src="images/umbrella-icon.png" class="slider__item__description_item__image"></img>
+						<span>20°c Sunny</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/price-icon.png" class="slider__item__description_item__image"></img>
+						<span>$465*</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/sign-icon.png" class="slider__item__description_item__image"></img>
+						<span>9days/8nights</span>
+					</p>
+				</div>
+					<p>Expires in : 10 days</p>
+				</div>
+			</div>
+			<div class="slider__item">
+				<img class="slider__item__image" src="images/dubai-image.jpg">
+				<div class="slider__item__description">
+					<div class ="slider__item__description__items_wrapper">
+					<h4 class="slider__item__description__title">Dubai</h4>
+					<span>New Destination!</span>
+				</div>
+					<div class="arrow-down"></div>
+				</div>
+				<div class="slider__item__description_items_block">
+					<div class="slider__item__description_items_block__content">
+					<p class="slider__item__description_item">
+						<img src="images/umbrella-icon.png" class="slider__item__description_item__image"></img>
+						<span>15°c Cloudy</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/price-icon.png" class="slider__item__description_item__image"></img>
+						<span>$1045*</span>
+					</p>
+					<p class="slider__item__description_item">
+						<img src="images/sign-icon.png" class="slider__item__description_item__image"></img>
+						<span>12days/11nights</span>
+					</p>
+				</div>
+					<p>Expires in : 4 days</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="holidays__section" id="holidays">
+		<h2 class="holidays__title">Holidays type</h2>
+			<p class="holidays__sub-title">
+				get explore your dream to travel the world!
+			</p>
+		
+			<div class="holidays__block">
+				<div class="holidays__block__item">
+					<div class="holidays__block__item__circle">
+						<img src="images/cruise-icon.png">
+					</div>
+					<span>Cruise</span>
+				</div>
+				<div class="holidays__block__item">
+					<div class="holidays__block__item__circle">
+						<img src="images/city-icon.png">
+					</div>
+					<span>City Breaks</span>
+				</div>
+				<div class="holidays__block__item">
+					<div class="holidays__block__item__circle">
+						<img src="images/honeymoon.png">
+					</div>
+					<span>Honeymoon</span>
+				</div>
+				<div class="holidays__block__item">
+					<div class="holidays__block__item__circle">
+						<img src="images/adventure-icon.png">
+					</div>
+					<span>Adventure</span>
+				</div>
+				<div class="holidays__block__item">
+					<div class="holidays__block__item__circle">
+						<img src="images/safari-icon.png">
+					</div>
+					<span>Safari</span>
+				</div>
+				<div class="holidays__block__item">
+					<div class="holidays__block__item__circle">
+						<img src="images/beach-icon.png">
+					</div>
+					<span>Beach</span>
+				</div>
+			</div>
+	</section>
+	<section class="clients_section" id="clients">
+		<h2 class="clients_section__title">
+			Happy clients
+		</h2>
+		<p class="clients__section__sub-title">
+			what customers say about us and why love our services!
+		</p>
+		<div class="slider">
+			<div class="slider-item">
+				<p class="slider-item__text">
+					Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+				</p>
+				<span class="client-name">Client Name</span>
+				<span>United States</span>
+			</div>
+			<div class="slider-item">
+				<p class="slider-item__text">
+					Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+				</p>
+				<span class="client-name">Client Name</span>
+				<span>United States</span>
+			</div>
+			<div class="slider-item">
+				<p class="slider-item__text">
+					Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+				</p>
+				<span class="client-name">Client Name</span>
+				<span>United States</span>
+			</div>
+			<div class="slider-item">
+				<p class="slider-item__text">
+					Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+				</p>
+				<span class="client-name">Client Name</span>
+				<span>United States</span>
+			</div>
+			<div class="slider-item">
+				<p class="slider-item__text">
+					Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+				</p>
+				<span class="client-name">Client Name</span>
+				<span>United States</span>
+			</div>
+			<div class="slider-item">
+				<p class="slider-item__text">
+					Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.
+				</p>
+				<span class="client-name">Client Name</span>
+				<span>United States</span>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer-top" id="blog">
+			<div class="footer-top__wrapper">
+				<div class="footer-top__wrapper__block">
+					<h4 class="footer-top__wrapper__block__title">
+						Newsletter
+					</h4>
+					<div class="footer-top__wrapper__block__content newsletter__block__content">
+						<div>
+						<p>
+							Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.
+						</p>
+						<form>
+						<input type="text" placeholder="Subscribes...">
+						<button>GO</button>
+					</form>
+				</div>
+					</div>
+				</div>
+				<div class="footer-top__wrapper__block">
+					<h4 class="footer-top__wrapper__block__title">
+						Latest news
+					</h4>
+					<div class="footer-top__wrapper__block__content latest-news__block__content">
+						<div class="footer-top__wrapper__block__content__item">
+							<img src="images/latest-news-icon-1.jpg" alt="">
+							<div>
+								<p>Postformat Gallery: Multiple images</p>
+								<span>October 21, 2013 - 3:31 pm</span>
+							</div>
+						</div>
+						<div class="footer-top__wrapper__block__content__item">
+							<img src="images/latest-news-icon-2.jpg" alt="">
+							<div>
+								<p>Snowboarding is fun!</p>
+								<span>December 12, 2012 - 9:11 pm</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-top__wrapper__block">
+					<h4 class="footer-top__wrapper__block__title">
+						Tags
+					</h4>
+					<div class="footer-top__wrapper__block__content tags__block__content">
+						<div class="tags__block__content__inner">
+						<div>Agent Login</div>
+						<div>Customer Login</div>
+						<div>Not a Member?</div>
+						<div>Contact</div>
+						<div>New Horizons</div>
+						<div>Lanscape</div>
+						<div>Tags</div>
+						<div>Nice</div>
+						<div>Some</div>
+						<div>Portrait</div>
+					</div>
+					</div>
+				</div>
+				<div class="footer-top__wrapper__block">
+					<h4 class="footer-top__wrapper__block__title">
+						Address
+					</h4>
+					<div class="footer-top__wrapper__block__content address__block__content">
+						<div>
+						<p>
+							DieSachbearbeiter Schönhauser Allee <br> 167c,10435 Berlin Germany
+						</p>
+						<a href="mailto:moin@blindtextgenerator.de">
+							E-mail: moin@blindtextgenerator.de
+						</a>
+					</div>
+						<div class="footer-top__wrapper__block__content__images_block">
+							<a href="#"><img src="images/facebook-icon.png" alt=""></a>
+							<a href="#"><img src="images/twitter-icon.png" alt=""></a>
+							<a href="#"><img src="images/tumblr.png" alt=""></a>
+							<a href="#"><img src="images/pinterest-icon.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer-bottom__wrapper">
+				<p>Copyright @voyage. All Right Reserved.</p>
+			</div>
+			<div class="footer-bottom__link">
+				<a href="#home">
+					<img src="images/footer-bottom_link-img.png" alt="">
+					<img src="images/footer-bottom_link_arrow-img.png" alt="">
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
