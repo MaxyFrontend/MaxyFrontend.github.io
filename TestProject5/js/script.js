@@ -49,6 +49,7 @@ $(document).ready(function(){
         breakpoint: 650,
         settings: {
           slidesToScroll: 1,
+	  slidesToShow:1,
           centerMode: true
         }
       }
