@@ -627,6 +627,7 @@ input[type="date"]:focus+img{
 	flex-direction: column;
 	width: 250px;
 	margin-right: 20px;
+	margin-left:20px;
 	padding: 8px 8px 25px 8px;
 	border:2px solid #eeeeee;
 	border-radius: 5px;
