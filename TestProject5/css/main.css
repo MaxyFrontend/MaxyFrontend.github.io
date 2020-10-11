@@ -450,6 +450,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="date"]:focus+img{
 	display: none;
 }
+input[type="text"]:focus+img{
+	display: none;
+}
 .form__item__label img {
 	position: absolute;
 	top:50%;
