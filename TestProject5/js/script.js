@@ -34,6 +34,10 @@ $(document).ready(function(){
 		slidesToScroll:1,
 		speed:700,
   });
+	  $('.input_type-date').focus(function() {
+  	this.type="date",
+  	this.value='2020-01-01';
+  });
   $('.offers_section .slider').slick({
 		infinite:true,
 		arrows:false,
