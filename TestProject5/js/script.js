@@ -29,7 +29,7 @@ $(document).ready(function(){
   	infinite:false,
     arrows:true,
 		dots:false,
-		adaptiveHeight:true,
+		adaptiveHeight:false,
 		slidesToShow:1,
 		slidesToScroll:1,
 		speed:700,
