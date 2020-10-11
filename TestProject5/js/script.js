@@ -35,6 +35,7 @@ $(document).ready(function(){
 		speed:700,
   });
 	  $('.input_type-date').focus(function() {
+	this.blur(),
   	this.type="date",
   	this.value='2020-01-01';
   });
