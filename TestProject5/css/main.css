@@ -897,6 +897,7 @@ input[type="date"]+img {
 .clients_section .slick-list {
 	overflow: hidden;
 	max-width: 1700px;
+	margin: 0 auto;
 }
 /* Лента слайдов */
 .clients_section .slick-track{
