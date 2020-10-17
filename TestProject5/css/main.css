@@ -424,18 +424,26 @@ p {
 	margin-right: 20px;
 }
 .form__item__label {
+	margin-right: 20px;
+}
+.form__item__input-wrapper {
 	position: relative;
 	width: 100%;
 	max-width: 350px;
 }
-.form__item__label input {
+.form__item__input-wrapper input {
 	padding: 15px 10px;
 	width: 100%;
-	min-width:200px;
 	height: 45px;
 	outline: transparent;
 	border-radius: 5px;
 	border:none;
+}
+.form__item__input-wrapper img {
+	position: absolute;
+	top:50%;
+	right:10px;
+	transform: translateY(-50%);
 }
 .input_type-date::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
@@ -525,8 +533,11 @@ input[type="date"]+img {
 	.search__form__item:nth-child(n + 2) {
 		margin-top: 20px;
 	}
-	.form__item__label {
+	.form__item__input-wrapper {
 		width: 70%;
+	}
+	.form__item__label {
+		margin-right: 0;
 	}
 	.search__form__button {
 		width: 100%;
@@ -627,8 +638,8 @@ input[type="date"]+img {
 .offers_section .slider__item {
 	display: flex;
 	flex-direction: column;
-	width: 250px;
-	margin-left:40px;
+	min-width: 250px;
+	margin-right: 20px;
 	padding: 8px 8px 25px 8px;
 	border:2px solid #eeeeee;
 	border-radius: 5px;
@@ -642,8 +653,14 @@ input[type="date"]+img {
 	height: 200px;
 	max-width: 100%;
 }
-.slider__item.slick-center{
-	
+.offers_section .slick-center{
+	transform:scale(1.1);
+	border:2px solid #1dd2af;
+	background-color: #2c3e50;
+	color:#fff;
+	transition: 0.3s;
+	transition-property: transform, border-color, background-color, color;
+	background-repeat: no-repeat;
 }
 .slider__item__description {
 	width: 100%;
@@ -670,16 +687,7 @@ input[type="date"]+img {
 	transition-delay: 0.1s;
 	transition-property: transform;
 }
-.offers_section .slider__item:hover {
-	transform:scale(1.1);
-	border:2px solid #1dd2af;
-	background-color: #2c3e50;
-	color:#fff;
-	transition: 0.3s;
-	transition-property: transform, border-color, background-color, color;
-	background-repeat: no-repeat;
-}
-.offers_section .slider__item:hover .arrow-down {
+.offers_section .slick-center .arrow-down {
 	background: url(../images/white-arrow-down.png);
 	background-repeat: no-repeat;
 }
@@ -726,6 +734,21 @@ input[type="date"]+img {
 }
 .slider__item__description_item__image {
 	margin-right: 10px;
+}
+@media(min-width:650px) {
+	.offers_section .slider__item:hover {
+	transform:scale(1.1);
+	border:2px solid #1dd2af;
+	background-color: #2c3e50;
+	color:#fff;
+	transition: 0.3s;
+	transition-property: transform, border-color, background-color, color;
+	background-repeat: no-repeat;
+}
+.offers_section .slider__item:hover .arrow-down {
+    background: url(../images/white-arrow-down.png);
+    background-repeat: no-repeat;
+}
 }
 @media (max-width: 650px) {
 	.offers_section .slick-track {
