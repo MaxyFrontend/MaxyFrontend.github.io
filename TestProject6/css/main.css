@@ -47,7 +47,8 @@ header {
 	background: url(../images/header-bg-copy.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: calc(100vh + 100px);
+	height: calc(100vh + 100px);
+	min-height: 900px;
 	padding: 60px 0px;
 }
 .container {
@@ -150,7 +151,8 @@ header {
 	}
 	.nav-button-active {
 	right:10px !important;
-	transition:right 0.5s;
+	transition:right 0.3s;
+	transition-delay: 0.2s;
 }
 	.nav-button__lines-active {
 		
@@ -184,7 +186,7 @@ header {
 }
 .header-bottom__social-block span {
 	transform:rotate(90deg) translate(15px, 12px);
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 	white-space: nowrap;
 }
 .header-bottom__social-block a {
@@ -192,6 +194,7 @@ header {
 }
 .header-bottom__title-block {
 	max-width: 735px;
+	margin-left: 20px;
 }
 .left-line_title {
 	position: relative;
@@ -222,7 +225,6 @@ header {
 
 .header-bottom__main-title {
 	font-size: 68px;
-	margin:0 20px 20px;
 	margin-bottom: 20px;
 }
 .scroll-block {
@@ -264,7 +266,10 @@ header {
 @media (max-width: 410px) {
 	.header .left-line_title::before {
 		width: 50px;
-
+		left:-60px;
+	}
+	.header-bottom {
+		margin-top: 90px;
 	}
 	.header-bottom__title {
 	margin-left: 50px;
