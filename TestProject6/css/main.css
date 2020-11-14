@@ -390,7 +390,7 @@ header {
 		flex-direction: column;
 	}
 	.content-block:nth-child(n + 1) {
-		padding: 0 5px;
+		padding-left: 0;
 		align-items: center;
 	}
 	.content-block:nth-child(even) {
