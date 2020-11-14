@@ -145,7 +145,7 @@ header {
 		position: fixed;
 		z-index: 2;
 		top:120px;
-		right:15px;
+		right:30px;
 		display: block;
 		transition:right 0.5s ease;
 	}
@@ -200,7 +200,7 @@ header {
 }
 .header-bottom__title-block {
 	max-width: 735px;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 .left-line_title {
 	position: relative;
@@ -285,7 +285,7 @@ header {
 		font-size: 20px;
 	}
 	.header-bottom__start-block {
-		padding-right: 16px;
+		padding-right: 10px;
 	}
 }
 .content-section {
@@ -390,7 +390,8 @@ header {
 		flex-direction: column;
 	}
 	.content-block:nth-child(n + 1) {
-		padding-left: 0;
+		padding-left: 0px;
+		
 		align-items: center;
 	}
 	.content-block:nth-child(even) {
