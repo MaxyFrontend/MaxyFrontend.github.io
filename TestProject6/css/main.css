@@ -168,6 +168,12 @@ header {
 		margin-left: 0 !important;
 	}
 }
+@media (max-width: 630px) {
+	.header {
+		height: 100vh;
+		min-height: auto;
+	}
+}
 @media (max-width: 450px) {
 	.nav-items {
 		font-size: 45px;
