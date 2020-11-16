@@ -423,6 +423,11 @@ header {
 		padding-top: 100px;
 	}
 }
+@media (max-width: 420px) {
+	.content-block__inner__title {
+		font-size:47px;
+	}
+}
 .footer {
 	padding: 200px 0px 50px;
 }
