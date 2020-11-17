@@ -9,11 +9,9 @@ h1, h2 {
 	color:#000;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 0px 10px;
 }
 h2 + p {
 	text-align: center;
-	padding: 0px 15px;
 }
 h4 {
 	font-family: 'Montserrat-bold';
@@ -55,16 +53,15 @@ h4 {
 	align-items: center;
 	width: 100%;
 	height:90px;
+	padding: 0 10px;
 }
 .header_container {
-	position/: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	max-width: 1250px;
 	margin: 0px 30px;
-	padding: 10px;
 }
 .header-logo_wrapper {
 	display: flex;
@@ -213,7 +210,7 @@ h4 {
 }
 .title_section {
 	width: 100%;
-	padding: 100px 0px;
+	padding: 100px 15px;
 	margin-top: 90px;
 	font-family: 'Montserrat-medium';
 	background:url(images/title_section-darked-background.jpg);
@@ -288,8 +285,7 @@ h4 {
 .services_section {
 	width: 100%;
 	min-height: 535px;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 100px 15px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -477,7 +473,7 @@ h4 {
 .latest-project_section {
 	font-family: 'Montserrat-regular';
 	width:100%;
-	padding: 90px 0px;
+	padding: 90px 15px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -518,7 +514,6 @@ h4 {
 	font-family: 'Montserrat-bold';
 	font-size: 20px;
 	margin: 0;
-	padding: 0px 10px;
 	text-transform: uppercase;
 	text-align: center;
 	color:#000;
@@ -527,7 +522,6 @@ h4 {
 	margin:30px 0px 0px 0px;
 	line-height: 1.4;
 	text-align: center;
-	padding: 0px 15px;
 }
 .items-block_item {
 	display: flex;
@@ -636,7 +630,7 @@ h4 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 0px 15px;
+	margin: 0 15px;
 }
 .culture_items-titles {
 	text-transform: uppercase;
@@ -692,7 +686,7 @@ h4 {
 		margin-top: 20px;
 	}
 	.culture_items {
-		margin-top: 40px;
+		margin: 40px 0 0 0;
 	}
 	.culture_items:first-child {
 		margin-top: 0;
@@ -708,7 +702,7 @@ h4 {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding: 70px 0px;
+	padding: 70px 15px;
 	background-color: #ededed;
 	color:#757575;
 }
@@ -724,13 +718,11 @@ h4 {
 	max-width: 950px;
 	width: 100%;
 	margin-top: 50px;
-	padding: 0px 15px;
 }
 .clients_block_item {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0px 15px;
 	margin-top: 50px;
 }
 .clients_block_item:first-child {
@@ -797,7 +789,7 @@ h4 {
 	}
 }
 .contact-us_section {
-	padding: 70px 0px;
+	padding: 70px 10px;
 	width:100%;
 	background-color: #66c35e;
 	display: flex;
@@ -839,7 +831,7 @@ h4 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 60px 0px;
+	padding: 60px 15px;
 }
 .logo_wrapper {
 	display: flex;
@@ -848,7 +840,6 @@ h4 {
 	flex-wrap: wrap;
 	width:100%;
 	max-width: 950px;
-	padding:15px;
 }
 .logo_images {
 	width: 170px;
@@ -1055,7 +1046,7 @@ h4 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 30px 0px;
+	padding: 30px 10px;
 }
 .footer-bottom_block {
 	width: 100%;
