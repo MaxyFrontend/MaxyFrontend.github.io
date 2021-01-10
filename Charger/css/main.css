@@ -213,7 +213,7 @@ h2 {
 	.nav-menu {
 		position: fixed;
 		top:0;
-		right:-100%;
+		right:-300px;
 		width: 20vw;
 		min-width: 300px;
 		min-height: 100%;
@@ -222,12 +222,12 @@ h2 {
 		justify-content: flex-start;
 		background-color: #040303;
 		z-index: 30;
-		transition:right 0.4s;
+		transition:right 0.3s ease-out;
 		overflow-y: scroll;
 	}
 	.nav-menu-active {
 		right:0;
-		transition:right 0.3s;
+		transition:right 0.3s ease-out;
 	}
 	.nav-menu::-webkit-scrollbar { width: 0px; }
 	.nav-menu__items-inner {
@@ -997,4 +997,3 @@ h2 {
 		top:-75px ;
 	}
 }
-
