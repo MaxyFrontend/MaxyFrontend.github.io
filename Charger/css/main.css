@@ -213,7 +213,7 @@ h2 {
 	.nav-menu {
 		position: fixed;
 		top:0;
-		right:0;
+		right:-100%;
 		width: 20vw;
 		min-width: 300px;
 		min-height: 100%;
@@ -222,14 +222,14 @@ h2 {
 		justify-content: flex-start;
 		background-color: #040303;
 		z-index: 30;
-		transform: translateX(100%);
-		transition:transform 0.3s;
+		transition:right 0.4s;
 		overflow-y: scroll;
 	}
-	.nav-menu::-webkit-scrollbar { width: 0px; }
 	.nav-menu-active {
-		transform: translateX(0);
+		right:0;
+		transition:right 0.3s;
 	}
+	.nav-menu::-webkit-scrollbar { width: 0px; }
 	.nav-menu__items-inner {
 		width: 100%;
 		padding: 20px 10px;
@@ -997,3 +997,4 @@ h2 {
 		top:-75px ;
 	}
 }
+
