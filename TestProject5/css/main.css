@@ -925,7 +925,11 @@ input[type="date"]+img {
 		padding: 30px 0px;
 	}
 	.clients_section .slider-item {
-		max-width: 250px;
+		max-width: 200px;
+		font-size: 12px;
+	}
+	.clients_section .slider-item .client-name {
+		font-size:18px;
 	}
 }
 .footer {
@@ -1038,6 +1042,7 @@ input[type="date"]+img {
 .footer-top__wrapper__block__content__images_block {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	max-width: 170px;
 	margin-top: 15px;
 }
