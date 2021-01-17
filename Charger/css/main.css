@@ -281,10 +281,14 @@ h2 {
 	margin-bottom: 22px;
 	}
 }
-@media (max-width: 530px) {
+@media (max-width: 700px) {
 	.header {
-		padding: 40px 20px 20px;
+		padding:20px 20px;
+		align-items: center;
 	}
+	img.logo {
+		width: 80%;
+}
 	.container {
 		padding: 0 20px;
 	}
