@@ -32,6 +32,17 @@
 body, html {
 	font-family: 'Proxima Nova-Regular';
 }
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(26, 24, 47, 0.15);
+    border-radius: 5px;
+    height: 200px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 5px;
+}
 h1, h2 {
 	font-family: 'Playfair Display-bold';
 }
