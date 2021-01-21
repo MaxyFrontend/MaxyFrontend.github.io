@@ -26,19 +26,19 @@ let menu = document.querySelector('.nav-menu');
 let menuButton = document.querySelector('.menu');
 let menuButton_lines = document.querySelectorAll('.menu-button__lines');
 let menuItems = document.querySelectorAll('.nav-menu__items');
-menuButton.onclick = toggleCLasses;
+menuButton.onclick = showMenu;
 for ( let i = 0; i < menuItems.length; i++){
-		menuItems[i].onclick = removeClasses;
+		menuItems[i].onclick = hideMenu;
 	};
-	headerLayout.onclick =  removeClasses;
-function toggleCLasses() {
+	headerLayout.onclick =  hideMenu;
+function showMenu() {
 	menu.classList.toggle('nav-menu-active'),
 	headerLayout.classList.toggle('header-layout-active');
 	for ( let i = 0; i < menuButton_lines.length; i++){
 		menuButton_lines[i].classList.toggle('menu-button__lines-active');
 	}
 };
-function removeClasses() {
+function hideMenu() {
 	menu.classList.remove('nav-menu-active'),
 	headerLayout.classList.remove('header-layout-active');
 	for ( let i = 0; i < menuButton_lines.length; i++){
