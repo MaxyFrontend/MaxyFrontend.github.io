@@ -1,7 +1,3 @@
-/*document.querySelector('.input-1').addEventListener('input', function() {
-	let inputValue = document.querySelector('.input-1').value;
-	document.querySelector('.range-output').innerHTML = inputValue;
-});*/
 let input = document.querySelector('.input-1');
 let input2 = document.querySelector('.input-2');
 let input3 = document.querySelector('.input-3');
@@ -35,7 +31,6 @@ button.onclick = function () {
 		 countryOutput ='Страна - ' + country + '. ';
 	}
 }
-	// input.value = "";
 	let output4_value = input4.value;
 	let age = input4.value;
 	if (output4_value >= 18) {
@@ -44,7 +39,6 @@ button.onclick = function () {
 		else {
 		ageOutput = 'Год выпуска - '+ age + '.';
 	}
-	// input2.value = "0";
 	let outputText;
 	for (var i = 0; i < inputs.length; i++) {
 		if (check === 0) {
@@ -71,6 +65,9 @@ button.onclick = function () {
 			requireTextOutput.innerHTML = "";
 			inputs[i].classList.remove('input_require');
 			inputs[i].classList.add('input_correct');
+			inputs[i].value ="";
+			input4.value ="2000";
+			rangeValue.innerHTML = input4.value;
 			// let outputText = nameOutput + nameOutput + countryOutput + ageOutput;
 			document.querySelector('.text-output__item-1').innerHTML = modelOutput;
 			document.querySelector('.text-output__item-2').innerHTML = brandOutput;
@@ -78,5 +75,4 @@ button.onclick = function () {
 			document.querySelector('.text-output__item-4').innerHTML = ageOutput;
 		}
 }
-	 // input2_Value.innerHTML = '0';
 };
