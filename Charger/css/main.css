@@ -40,8 +40,11 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #333;
+    background: #484545;
     border-radius: 5px;
+}
+.document-overflow-hidden {
+	overflow-y: hidden;
 }
 h1, h2 {
 	font-family: 'Playfair Display-bold';
@@ -68,7 +71,7 @@ h2 {
 		padding: 40px 45px 20px;
 		top:0;
 		left:0;
-		background-color: rgba(0,0,0, 0.6);
+		background-color: rgba(0,0,0, 0.4);
 		z-index: 40;
 		width: 100%;
 		display: flex;
@@ -123,6 +126,7 @@ h2 {
 }
 .main__title-block {
 	max-width: 380px;
+	margin:0 auto;
 	margin: 20vh auto;
 }
 .title-block__title {
@@ -329,6 +333,8 @@ h2 {
 		font-family: 'Playfair Display-bold';
 		color: #e3a062;
 		font-size: 200px;
+		line-height: 1;
+		top:-115px;
 		opacity: 0.5;
 	}
 
@@ -510,7 +516,6 @@ h2 {
 }
 .services__content::after {
 	content: "S";
-	top:-135px;
 	left:0;
 }
 .services__content__heading {
@@ -741,6 +746,12 @@ h2 {
 		right:15px;
 	}
 }
+@media (max-width: 370px) {
+	.projects__content::after {
+		top:-110px !important;
+		right:15px;
+	}
+}
 .testimonials {
 	background: url(../images/background/testimonials.jpg) no-repeat;
 	background-size: cover;
@@ -755,7 +766,6 @@ h2 {
 }
 .testimonials .container::before {
 	content: "T";
-	top:-150px;
 	left:0;
 }
 .testimonials .rotated-text__inner {
@@ -768,7 +778,6 @@ h2 {
 	font-family: 'Playfair Display-bold';
 	content: "T";
 	position: absolute;
-	top:-150px;
 	left:45px;
 	font-size: 200px;
 	color: #e3a062;
@@ -872,13 +881,11 @@ h2 {
 }
 .charger .container::before {
 	content: "C";
-	top:-150px;
 	right:0;
 }
 @media (max-width: 1845px) {
 	.charger .container::before {
 	content: "C";
-	top:-150px;
 	right:45px;
 }
 }
@@ -966,6 +973,9 @@ h2 {
 .footer__content-block:nth-child(n + 2) {
 	margin-top: 40px;
 }
+.footer__content-block__item {
+	text-align: center;
+}
 .footer__bottom {
 	color: #525252;
 }
@@ -990,8 +1000,8 @@ h2 {
 	.projects__content::after,
 	.testimonials .container::before,
 	.charger .container::before {
-		font-size: 130px ;
-		top:-100px ;
+/*		font-size: 130px ;
+		top:-100px ;*/
 	}
 }
 @media (max-width: 730px) {
@@ -1008,6 +1018,6 @@ h2 {
 	.testimonials .container::before,
 	.charger .container::before {
 		font-size: 100px ;
-		top:-75px ;
+		top:-60px ;
 	}
 }
