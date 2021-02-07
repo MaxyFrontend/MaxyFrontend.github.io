@@ -19,8 +19,35 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
         });
     });
 });
+//smooth scroll
 
-let header = document.querySelector('.header');
+//header-hide
+let lastScroll = 0;
+const defaultOffset = 200;
+const header = document.querySelector('.header');
+
+const scrollPosition = () => {
+	return window.pageYOffset || document.documentElement.scrollTop;
+}
+const containHide = () => {
+	return header.classList.contains('header-hide');
+}
+
+window.addEventListener('scroll', () => {
+	if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
+		header.classList.add('header-hide');
+	}
+	else if(scrollPosition() < lastScroll && containHide()){
+		header.classList.remove('header-hide');
+	}
+
+	lastScroll = scrollPosition();
+})
+
+//header-hide
+
+//menu
+let html = document.querySelector('html');
 let headerLayout = document.querySelector('.header-layout');
 let menu = document.querySelector('.nav-menu');
 let menuButton = document.querySelector('.menu');
@@ -45,6 +72,8 @@ function hideMenu() {
 		menuButton_lines[i].classList.remove('menu-button__lines-active');
 	}
 };
+//menu
+
 // swiper-slider
 new Swiper('.testimonials-swiper', {
 	navigation: {
