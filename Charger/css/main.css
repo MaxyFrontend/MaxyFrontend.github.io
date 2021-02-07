@@ -77,6 +77,10 @@ h2 {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
+		transition:top 0.3s ease-in;
+}
+.header-hide {
+	top:-105px;
 }
 .header-layout {
 	position: fixed;
