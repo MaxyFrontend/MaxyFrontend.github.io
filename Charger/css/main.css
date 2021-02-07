@@ -99,7 +99,6 @@ h2 {
 	display: flex;
 }
 .header .nav {
-	transform:translateX(-5%);
 }
 .nav__items {
 	text-transform: uppercase;
