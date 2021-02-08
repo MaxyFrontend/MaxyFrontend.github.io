@@ -99,6 +99,7 @@ h2 {
 	display: flex;
 }
 .header .nav {
+/*	transform:translateX(-5%);*/
 }
 .nav__items {
 	text-transform: uppercase;
@@ -201,6 +202,17 @@ h2 {
 		width: 50%;
 	}
 	
+}
+@media (max-width: 400px) {
+	.main__footer {
+		flex-direction: column;
+	}
+	.main__footer__social {
+		margin: 0 auto;
+	}
+	.scroll-down_link {
+		margin: 23px auto;
+	}
 }
 @media (max-width: 950px) {
 	.header .nav {
