@@ -21,33 +21,9 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
 });
 //smooth scroll
 
-//header-hide
-let lastScroll = 0;
-const defaultOffset = 200;
-const header = document.querySelector('.header');
-
-const scrollPosition = () => {
-	return window.pageYOffset || document.documentElement.scrollTop;
-}
-const containHide = () => {
-	return header.classList.contains('header-hide');
-}
-
-window.addEventListener('scroll', () => {
-	if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
-		header.classList.add('header-hide');
-	}
-	else if(scrollPosition() < lastScroll && containHide()){
-		header.classList.remove('header-hide');
-	}
-
-	lastScroll = scrollPosition();
-})
-
-//header-hide
-
 //menu
 let html = document.querySelector('html');
+const header = document.querySelector('.header');
 let headerLayout = document.querySelector('.header-layout');
 let menu = document.querySelector('.nav-menu');
 let menuButton = document.querySelector('.menu');
@@ -73,6 +49,30 @@ function hideMenu() {
 	}
 };
 //menu
+
+//header-hide
+let lastScroll = 0;
+const defaultOffset = 200;
+
+const scrollPosition = () => {
+	return window.pageYOffset || document.documentElement.scrollTop;
+}
+const containHide = () => {
+	return header.classList.contains('header-hide');
+}
+
+window.addEventListener('scroll', () => {
+	if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset && !menu.classList.contains('nav-menu-active')) {
+		header.classList.add('header-hide');
+	}
+	else if(scrollPosition() < lastScroll && containHide()){
+		header.classList.remove('header-hide');
+	}
+
+	lastScroll = scrollPosition();
+})
+
+//header-hide
 
 // swiper-slider
 new Swiper('.testimonials-swiper', {
