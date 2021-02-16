@@ -836,6 +836,7 @@ h2 {
 	font-size: 32px;
 	color:#fff;
 	margin-bottom: 75px;
+	padding: 0 20px;
 }
 .testimonials__text::after {
 	content:"“";
