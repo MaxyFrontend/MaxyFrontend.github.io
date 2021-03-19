@@ -246,15 +246,13 @@ h2 {
 		top:0;
 		right:-300px;
 		width: 300px;
-		min-width: 300px;
-		min-height: 100%;
-		padding: 75px 0 30px 0;
+		height: 100%;
 		display: flex;
 		justify-content: flex-start;
 		background-color: #040303;
 		z-index: 30;
 		transition:right 0.3s ease-out;
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 	.nav-menu-active {
 		right:0;
@@ -264,6 +262,8 @@ h2 {
 	.nav-menu__items-inner {
 		width: 100%;
 		padding: 20px 10px;
+		margin-top: 75px;
+		height: inherit;
 		display: block;
 	}
 	.nav-menu__items {
@@ -272,6 +272,9 @@ h2 {
 		color:#fff;
 		transition:color 0.2s;
 	}
+	.nav-menu__items:last-child {
+	margin-bottom: 30px;
+}
 	.nav-menu__items:hover {
 	color: #e3a062;
 }
@@ -317,8 +320,8 @@ h2 {
 		padding:20px 20px;
 		align-items: center;
 	}
-	.nav-menu {
-		padding-top: 50px;
+	.nav-menu__items-inner {
+		margin-top: 50px;
 	}
 	.nav-menu__items {
 		font-size: 40px;
@@ -836,7 +839,7 @@ h2 {
 	font-size: 32px;
 	color:#fff;
 	margin-bottom: 75px;
-	padding: 0 20px;
+	padding: 0 23px;
 }
 .testimonials__text::after {
 	content:"“";
