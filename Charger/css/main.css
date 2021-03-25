@@ -849,6 +849,13 @@ h2 {
 .swiper-button-next {
 	color:#fff;
 }
+.swiper-slide {
+	transform: scale(0.5);
+	transition:transform 0.3s ease-in;
+}
+.swiper-slide-active {
+	transform: scale(1);
+}
 @media (max-width: 600px) {
 	.testimonials__text {
 		font-size: 25px;
