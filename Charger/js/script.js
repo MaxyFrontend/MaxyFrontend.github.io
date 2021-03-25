@@ -78,6 +78,7 @@ window.addEventListener('scroll', () => {
 new Swiper('.testimonials-swiper', {
 	navigation: {
 		nextEl:'.swiper-button-next',
-		prevEl:'.swiper-button-prev'
+		prevEl:'.swiper-button-prev',
 	},
+	speed:500,
 });
