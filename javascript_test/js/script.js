@@ -128,4 +128,6 @@ checkButton.onclick = checkValue;
 		output_4.innerHTML = 'Год выпуска -';
 			input4.value ="2000";
 			rangeValue.innerHTML = input4.value;
+					outputText = '';
+		requireTextOutput.innerHTML = outputText;
 		}
