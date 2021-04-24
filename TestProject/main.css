@@ -422,8 +422,7 @@ letter-spacing: 1.5px;
 	max-width: 300px;
 	display: flex;
 	justify-content: center;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin: 0 auto;
 }
 @media screen and (max-width: 375px) {
 	body.footer_icons img {
