@@ -309,6 +309,7 @@ html::-webkit-scrollbar-thumb {
 .about-us__content_item {
 	display: flex;
 	align-items: flex-start;
+	z-index: 2;
 }
 .about-us__content_item:nth-child(2n + 1) {
 	flex-direction: row-reverse;
@@ -336,7 +337,7 @@ html::-webkit-scrollbar-thumb {
 	transform:translate(-50%,-50%);
 	max-width: 70%;
 	margin:0 auto;
-	z-index: -1;
+	z-index: 1;
 }
 .about-us__content_item:nth-child(3) img {
 	margin-right: -30px;
