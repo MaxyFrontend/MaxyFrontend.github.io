@@ -530,8 +530,10 @@ html::-webkit-scrollbar-thumb {
 .input {
 	width: 100%;
 	color:#fff;
-	outline:transparent;
-	border:none;
+	outline:none;
+	border-top: none;
+    	border-left: none;
+    	border-right: none;
 	border-bottom:1px solid #fff;
 	padding: 15px 30px;
 	background-color: transparent;
