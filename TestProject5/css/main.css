@@ -592,48 +592,6 @@ input[type="date"]+img {
 .slick-slide.slick-active{
 	outline: none;
 }
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-
-/* Точки */
-.slick-dots{}
-.slick-dots li{}
-.slick-dots button{}
-
-.offers_section .slider .slick-arrow:focus {
-
-}
-.offers_section .slider .slick-arrow{
-}
-.offers_section .slider .slick-arrow.slick-prev{
-}
-.offers_section .slider .slick-arrow.slick-next{
-}
-.offers_section .slider .slick-arrow.slick-disabled{
-}
-.slick-active {
-}
-.offers_section .slider .slick-dots{
-}
-.offers_section .slider .slick-dots li{
-}
-.offers_section .slider .slick-dots button{
-}
-
-.offers_section .slider .slick-dots .slick-active button{
-
-}
 
 .offers_section .slider__item {
 	display: flex;
@@ -702,7 +660,7 @@ input[type="date"]+img {
 	max-height: 0rem;
 	overflow-y: hidden;
 	padding-top: 20px;
-	transition:0.3s;
+	transition:0.5s;
 	transition-property: max-height;
 }
 .slider__item__description_items_block div + p {
@@ -712,7 +670,7 @@ input[type="date"]+img {
 	text-align: left;
 }
 .description_items_block-show {
-	max-height: 100rem;
+	max-height: 15rem;
 	overflow-y: visible;
 	transition:0.5s;
 	transition-property: max-height;
