@@ -427,7 +427,8 @@ html::-webkit-scrollbar-thumb {
 
 }
 .content-block:nth-child(3) .content-block__image {
-
+	max-width: 560px;
+	width: 100%;
 }
 @media (max-width: 1100px) {
 	.content-block__inner::before {
@@ -527,7 +528,7 @@ html::-webkit-scrollbar-thumb {
 	margin-right: 100px;
 	margin-bottom: 50px;
 }
-.input {
+.contact__input {
 	width: 100%;
 	color:#fff;
 	outline:transparent;
@@ -536,8 +537,42 @@ html::-webkit-scrollbar-thumb {
 	padding: 15px 30px;
 	background-color: transparent;
 }
-.input:nth-child(n+2) {
+.contact__label {
+	position: relative;
+	z-index: 1;
+}
+.contact__label:nth-child(n+2) {
 	margin-top: 50px;
+}
+.contact__label::before {
+	content:'Name';
+	position: absolute;
+	top:50%;
+	left:30px;
+	transform: translateY(-50%);
+	color:#fff;
+	font-size: 16px;
+	z-index: -1;
+	opacity: 1;
+	transition:top,left,opacity, 0.2s;
+}
+.contact__label:first-child::before {
+	content:'Name';
+}
+.contact__label:nth-child(2)::before {
+	content:'Email';
+}
+.contact__label:nth-child(3)::before {
+	content:'Phone number';
+}
+.contact__label:focus::before {
+	top:0;
+	transform:translateY(0);
+}
+.move-placeholder::before {
+	top:0;
+	left:20px;
+	opacity: 0.5;
 }
 .textarea {
 	width: 100%;
