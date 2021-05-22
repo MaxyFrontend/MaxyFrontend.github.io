@@ -38,6 +38,8 @@ for (let anchor of anchors) {
   })
 }
 let input = document.querySelectorAll('.contact__input');
+let inputTypeNumber = document.querySelector("#input-3");
+let regex = /[a-z!@#№$%^&*_+\=\[\]{};':"\\|,.<>\/?]/;
 let label = document.querySelectorAll('.contact__label');
 input.forEach(item => {
 	item.addEventListener('focus', function() {
@@ -49,6 +51,10 @@ input.forEach(item => {
 		}
 })
 })
+ inputTypeNumber.addEventListener('input', function() {
+ 		this.value = this.value.replace(regex, '');
+ 	
+ });
 
 
 
