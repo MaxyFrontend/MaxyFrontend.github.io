@@ -37,3 +37,18 @@ for (let anchor of anchors) {
     })
   })
 }
+let input = document.querySelectorAll('.contact__input');
+let label = document.querySelectorAll('.contact__label');
+input.forEach(item => {
+	item.addEventListener('focus', function() {
+			this.parentElement.classList.add('move-placeholder');
+})
+	item.addEventListener('blur', function() {
+		if(item.value.length <= 0) {
+			this.parentElement.classList.remove('move-placeholder');
+		}
+})
+})
+
+
+
