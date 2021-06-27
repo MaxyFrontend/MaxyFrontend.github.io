@@ -127,7 +127,7 @@ h2 {
 	position: absolute;
 	left:0;
 	width: 100%;
-	height: 13%;
+	height: 3px;
 	background-color: #e3a062;
 	transition:all 0.3s ease-in-out;
 }
