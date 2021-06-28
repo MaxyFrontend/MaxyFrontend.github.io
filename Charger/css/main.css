@@ -970,7 +970,7 @@ h2 {
 		padding: 120px 30px;
 	}
 	.charger__text {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.charger__wrapper .rotated-text__inner {
 		right: -40px;
@@ -982,7 +982,7 @@ h2 {
 		min-width: 250px;
 	}
 	.charger__text {
-		font-size: 15px;
+		font-size: 16px;
 	}
 }
 @media (max-width: 370px) {
