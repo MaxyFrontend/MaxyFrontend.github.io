@@ -924,12 +924,10 @@ h2 {
 	margin: 70px 0px 45px 0px;
 	font-size: 20px;
 }
-.charger__text::before {
+.charger__text::first-letter {
 	content: "T";
 	font-size: 35px;
 	color:#e3a062;
-	float: left;
-	margin-right: 15px;
 }
 @media (max-width: 1300px) {
 	.charger__wrapper__image {
@@ -962,14 +960,29 @@ h2 {
 		margin: 0 auto;
 	}
 }
+@media (max-width: 550px) {
+	.charger__wrapper .rotated-text__inner {
+		font-size: 14px;
+	}
+}
+@media (max-width: 450px) {
+	.charger .container {
+		padding: 120px 30px;
+	}
+	.charger__text {
+		font-size: 16px;
+	}
+	.charger__wrapper .rotated-text__inner {
+		right: -40px;
+		font-size: 13px;
+	}
+}
 @media (max-width: 400px) {
 	.charger__wrapper__image {
 		min-width: 250px;
 	}
-}
-@media (max-width: 450px) {
-	.charger__wrapper .rotated-text__inner {
-		right: -40px;
+	.charger__text {
+		font-size: 15px;
 	}
 }
 @media (max-width: 370px) {
