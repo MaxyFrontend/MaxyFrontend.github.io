@@ -302,7 +302,7 @@ html::-webkit-scrollbar-thumb {
 	position: relative;
 	margin-top: 130px;
 	display: grid;
-	grid-template-columns: repeat(2, minmax(350px,420px));
+	grid-template-columns: repeat(2, minmax(200px,420px));
 	grid-column-gap: 400px;
 	grid-row-gap: 70px;
 	justify-content: center;
