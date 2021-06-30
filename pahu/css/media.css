@@ -245,6 +245,7 @@
 	}
 	.blog__items:nth-child(n+2) {
 		margin-top: 40px;
+		margin-left: 0;
 	}
 }
 @media (max-width: 1000px) {
