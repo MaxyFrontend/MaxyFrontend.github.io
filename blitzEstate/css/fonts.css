@@ -18,8 +18,8 @@
 }
 @font-face {
 	font-family: 'Geometria-extrabold';
-	src: url(../fonts/geometria/Geometria-Extrabold.woff2) format('woff2'),
-	url(../fonts/Geometria-Extrabold.woff) format('woff');
+	src: url(../fonts/geometria/Geometria-ExtraBold.woff2) format('woff2'),
+	url(../fonts/Geometria-ExtraBold.woff) format('woff');
 	font-style: normal;
 }
 @font-face {
