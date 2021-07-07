@@ -42,26 +42,23 @@
 	}
 }
 @media (max-width: 430px) {
-	.header .logo__description {
+	.header-info__logo .logo__description {
 		display: none;
 	}
-	.logo__name {
+	.header-info__logo .logo__name {
 		margin-right: 0;
 	}
 }
-@media (max-width: 750px) {
-	/*.header-info {
-		justify-content: flex-end;
+@media (max-width: 900px) {
+	.nav__info {
+		max-width: 300px;
 	}
-	.menu {
-		position: fixed;
-		top:50px;
-		left:30px;
-	}*/
+}
+@media (max-width: 750px) {
 	.logo__description {
 		max-width: 180px;
 	}
-	.header .call {
+	.header-info__call {
 		display: none;
 	}
 	.header .logo img {
