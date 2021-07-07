@@ -45,15 +45,50 @@ button {
 	top: 0;
 	width: 100%;
 	height: 100%;
+	padding: 100px 0;
 	background-color: #535860;
 	z-index: 10;
 	transition: left 0.5s;
+	overflow-y: auto;
 }
 .nav-active {
 	left:0;
 }
-.nav__items-inner {}
-.nav__item {}
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.nav__items-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-right: 50px;
+	display: block;
+}
+.nav__link-item {
+	font-size: 2.4em;
+	transition: color 0.3s;
+}
+.nav__link-item:hover {
+	color: rgba(3,3,3,0.5);
+}
+.nav__link-item a {
+	display: block;
+	padding: 5px;
+}
+.nav__info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.nav-logo {
+	
+}
+.nav-wrapper .call {
+	margin-top: 30px;
+}
 .menu {
 	display: flex;
 	cursor: pointer;
@@ -65,6 +100,8 @@ button {
 }
 .menu__button + span {
 	margin-left: 10px;
+	opacity: 1;
+	transition:opacity 0.3s ease-out;
 }
 .menu__button {
 	position: relative;
@@ -110,6 +147,9 @@ button {
 	transform:scale(0.5, 0);
 	transition:0.4s ease;
 }
+.menu__button-active+span {
+	opacity: 0;
+}
 .logo {
 	display: flex;
 	align-items: center;
@@ -131,7 +171,7 @@ button {
 	font-family: 'Geometria-light';
 }
 .call {
-
+	text-align: center;
 }
 .phone-number {
 	font-size: 1.5em;
@@ -477,6 +517,7 @@ button {
 	transition: all 0.5s ;
 }
 .apartaments__show-more {
+	width: 100%;
 	cursor: pointer;
 	text-align: center;
 	margin-top: 40px;
@@ -493,6 +534,7 @@ button {
 	margin-left: 10px;
 }
 .apartaments__show-less {
+	width: 100%;
 	display: none;
 	cursor: pointer;
 	text-align: center;
