@@ -11,33 +11,46 @@
 	<title>Document</title>
 </head>
 <body>
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
 			<div class="header-info">
 				<nav class="nav">
-					<ul class="nav__items-inner">
-						<li class="nav__item">
-							<a href="#"></a>
+					<div class="container nav-wrapper">
+						<ul class="nav__items-inner">
+						<li class="nav__link-item">
+							<a href="#header">Главная</a>
 						</li>
-						<li class="nav__item">
-							<a href="#"></a>
+						<li class="nav__link-item">
+							<a href="#test">Тест</a>
 						</li>
-						<li class="nav__item">
-							<a href="#"></a>
+						<li class="nav__link-item">
+							<a href="#services">Услуги</a>
 						</li>
-						<li class="nav__item">
-							<a href="#"></a>
+						<li class="nav__link-item">
+							<a href="#apartaments">Апартаменты</a>
 						</li>
-						<li class="nav__item">
-							<a href="#"></a>
+						<li class="nav__link-item">
+							<a href="#experience">О нас</a>
 						</li>
-						<li class="nav__item">
-							<a href="#"></a>
+						<li class="nav__link-item">
+							<a href="#directions">Направления</a>
 						</li>
-						<li class="nav__item">
-							<a href="#"></a>
+						<li class="nav__link-item">
+							<a href="#footer">Контакты</a>
 						</li>
 					</ul>
+					<div class="nav__info">
+						<div class="logo nav-logo">
+							<img src="img/header/logo.svg" alt="logotype" class="logo__image">
+							<span class="logo__name">Blitz <br> Estate</span>
+							<p class="logo__description">Продажа недвижимости в Москва-Сити</p>
+						</div>
+						<div class="call">
+							<a href="tel:+7(495)-199-19-99" class="phone-number">+7 (495) 199-19-99</a>
+							<a class="call__button hover-button" href="tel:+7(495)-199-19-99">Заказать звонок</a>
+						</div>
+					</div>
+				</div>
 				</nav>
 				<div class="menu">
 					<div class="menu__button">
@@ -45,12 +58,12 @@
 					</div>
 					<span>Меню</span>
 				</div>
-				<div class="logo">
+				<div class="logo header-info__logo">
 						<img src="img/header/logo.svg" alt="logotype" class="logo__image">
 						<span class="logo__name">Blitz <br> Estate</span>
 					<p class="logo__description">Продажа недвижимости в Москва-Сити</p>
 				</div>
-				<div class="call">
+				<div class="call header-info__call">
 					<a href="tel:+7(495)-199-19-99" class="phone-number">+7 (495) 199-19-99</a>
 					<a class="call__button hover-button" href="tel:+7(495)-199-19-99">Заказать звонок</a>
 				</div>
@@ -80,7 +93,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="test">
+	<section class="test" id="test">
 		<div class="container">
 			<h2 class="test__title">
 				Пройдите тест из 5 вопросов
@@ -230,7 +243,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<h2 class="services_title">Наши услуги на международном рынке</h2>
 			<div class="services__wrapper">
@@ -285,7 +298,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="apartaments" >
+	<section class="apartaments" id="apartaments">
 		<div class="container">
 			<h2 class="apartaments__title">Выберите апартаменты в Москва-Сити</h2>
 			<p class="apartaments__sub-title">Мы включили в наш каталог все апартаменты доступные для покупки в Москва-Сити</p>
@@ -496,15 +509,15 @@
 					</div>
 				</div>
 			</div>
-				<div class="apartaments__show-more">Показать еще
+				<button class="apartaments__show-more">Показать еще
 					<img src="img/apartments/arrow-down.svg" alt="arrow">
-				</div>
-				<div class="apartaments__show-less" >Показать меньше
+				</button>
+				<button class="apartaments__show-less" >Показать меньше
 					<img src="img/apartments/arrow-up.svg" alt="arrow">
-				</div>
+				</button>
 		</div>
 	</section>
-	<section class="experience">
+	<section class="experience" id="experience">
 		<div class="container">
 			<div class="experience__wrapper">
 				<div class="experience__left-block">
@@ -534,7 +547,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="direction">
+	<section class="direction" id="directions">
 		<div class="container">
 			<h2 class="direction__title">
 				Направления нашего агентства
@@ -663,7 +676,7 @@
 			<img src="img/Person.png" alt="person" class="agency-director__img">
 		</div>
 	</section>
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="footer__wrapper">
 				<div class="footer__column">
