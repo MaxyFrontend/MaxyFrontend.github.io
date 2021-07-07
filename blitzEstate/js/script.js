@@ -3,7 +3,7 @@ let menu = document.querySelector('.menu');
 let menuButton = document.querySelector('.menu__button');
 let buttonLine = document.querySelector('.button__line');
 let nav = document.querySelector('.nav');
-let navLink = document.querySelectorAll('.nav__item');
+let navLink = document.querySelectorAll('.nav__link-item');
 menu.addEventListener('click', toggleMenu);
 function toggleMenu() {
 	menuButton.classList.toggle('menu__button-active'),
@@ -20,7 +20,9 @@ function hideMenu() {
 	menuButton.classList.remove('menu__button-active');
 	html.style.overflowY = "visible";
 	}
-
+	navLink.forEach(link => {
+		link.addEventListener('click', hideMenu);
+	})
 
 
 /*									swiper slider							*/
